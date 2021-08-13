@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin: 1.5%;
+}
+
+header .logo h2 {
+    margin-left: 10%;
+}
+
+header .logo h2::after {
+    content: "Shop";
+    font-weight: 400;
+    color: red;
+} 
+
+header nav {
+    padding: 0 2% 0 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li:last-child {
+    margin-left: 5%;
+    color: #D01418;
+}
+
+header .menu-responsive {
+    display: none;
+}
+
+section.titulo {
+    height: 512px;
+    background-image: url('../img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.titulo h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+section.titulo h1 span {
+    color: #D01418;
+}
+
+section.titulo button {
+    width: 220px;
+    height: 61px;
+    font-size: 20px;
+    border-color: #D01418;
+    background-color: #D01418;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    /* margin-top: 2%; */
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F3F3;
+    padding: 2% 0 6% 0;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 1%;
+    /* margin-top: 2%; */
+}
+
+main section.destacados {
+    /* border: 2px solid green; */
+    display: flex;
+    width: 1024px;
+    justify-content: space-evenly;
+    padding: 10px 0 60px 0;
+}
+
+main section.destacados article {
+    /* border: 2px solid blue; */
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+main section.destacados article .imagen {
+    width: 50%;
+    margin: 30px 68px 30px 68px;
+}
+
+main section.destacados article .desc_prod {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 10px 10px 10px 20px;
+}
+
+main section.destacados article .desc_prod small {
+    color: #619D00;
+}
+
+main section.estrellas {
+    /* border: 2px solid green; */
+    display: flex;
+    width: 1024px;
+    justify-content: space-around;
+}
+
+main section.estrellas article {
+    width: 400px;
+    height: 135px;
+    background-color: white;
+    border-radius: 5px;
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main section.estrellas article p {
+    color: white;
+    font-size: 25px;
+    padding-right: 10px;
+    font-weight: 400;
+}
+
+main section.estrellas article.card-sg {
+    background-image: url('../img/banner1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.estrellas article.card-pc {
+    background-image: url('../img/banner2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: #222222;
+}
+
+footer .footer_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+footer .footer_info .logo_footer h2 {
+    color: white;
+}
+
+footer .footer_info .logo_footer h2::after {
+    content: "Shop";
+    font-weight: 400;
+    color: red;
+}
+
+footer .footer_info .logo_footer {
+    display: flex;
+    align-items: center;
+    margin: 1.5%;
+}
+
+footer .footer_info .logo_footer h2 {
+    margin-left: 10%;
+}
+
+footer .footer_info .redes_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
+    height: 80px;
+    width: 168px;
+}
+
+footer .footer_info .redes_footer p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+footer .footer_info .redes_footer .img_redes {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .footer_info .redes_footer .img_redes img {
+    padding: 10px;
+}
+
+footer h5 {
+    background-color: #C4C4C4;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Smartphones*/
+@media screen and (max-width: 480px) {
+
+    section.titulo h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    header nav {
+        display: none;
+        /* visibility: hidden; */
+    }
+
+    header .menu-responsive {
+        display: flex;
+        margin-right: 36px;
+        font-size: 20px;
+    }
+
+    main section.destacados {
+        flex-direction: column;
+        align-items: center;
+        width: 411px;
+    }
+
+    main section.destacados article {
+        width: 300px;
+        margin: 20px;
+    }
+
+    main section.estrellas {
+        flex-direction: column;
+        align-items: center;
+        width: 411px;
+    }
+
+    main section.estrellas article {
+        width: 300px;
+        margin: 10px;
+    }
+
+    footer .footer_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer_info .redes_footer {
+        margin-top: 20px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    main {
+        /* background-color: blue; */
+    }
+
+    section.titulo h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    header nav {
+        display: none;
+        /* visibility: hidden; */
+    }
+
+    header .menu-responsive {
+        display: flex;
+        margin-right: 36px;
+        font-size: 20px;
+    }
+
+    main section.destacados {
+        flex-direction: column;
+        align-items: center;
+        width: 411px;
+    }
+
+    main section.destacados article {
+        width: 300px;
+        margin: 20px;
+    }
+
+    main section.estrellas {
+        flex-direction: column;
+        align-items: center;
+        width: 411px;
+    }
+
+    main section.estrellas article {
+        width: 300px;
+        margin: 10px;
+    }
+
+    footer .footer_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer_info .redes_footer {
+        margin-top: 20px;
+    }
+}
+
+/* Pantallas más grandes*/
+@media screen and (min-width: 1279px) {
+    main {
+        /* background-color: yellow; */
+    }
+}
